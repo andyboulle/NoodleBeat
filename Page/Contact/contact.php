@@ -43,7 +43,7 @@
                 <img src="../../images/twitter.jpg" style="float: left; height: 90px; padding-top: 20px;">
                 <a href="https://twitter.com/NoodleBeat"><button>@NoodleBeat</button></a>
                 <img src="../../images/phone.jpg" style="height: 80px; float: left; padding-top: 25px; margin: 5px">
-                <button>443-812-6420</button>
+                <button>###-###-####</button>
             </div>
         </div>
 

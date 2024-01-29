@@ -45,14 +45,6 @@
     } else {
         if (move_uploaded_file($_FILES["upload"]["tmp_name"], $target)) {
             
-            /*echo "The file ". basename($_FILES["upload"]["name"]). " has been uploaded.";
-            echo "<br>" . $title. "<br>";
-            echo $artist. "<br>";
-            echo $date. "<br>";
-            echo $genre. "<br>";
-            echo $type. "<br>";
-            echo $file. "<br>";*/
-            
             $sql = "INSERT INTO `tracks` (`title`, `artist`, `genre`, `date_uploaded`, `file_type`, `file`, `likes`) VALUES ('$title', '$artist', '$genre', '$date', '$type', '$file', 0);";
             $result = mysqli_query($conn, $sql);
             

@@ -8,8 +8,6 @@
     $conn = mysqli_connect($dbServerName, $dbUsername, $dbPassword, $dbName);
     if(mysqli_connect_errno()){
         echo "Failed to connect";
-    }else{
-        //echo "Connected to Database<br>";
     }
 
 ?>
