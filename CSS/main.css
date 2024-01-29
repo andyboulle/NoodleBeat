@@ -1,0 +1,345 @@
+/*Basic CSS Styling*/
+@font-face{
+    font-family: Poppins;
+    src: url('../Fonts/archivo.regular.ttf');
+}
+html, body{
+    margin: 0;
+    font-family: Poppins;
+}
+
+/*Header*/
+.header {
+    background-color: #009afd;
+    text-align: center;
+    overflow: auto;
+    color: white;
+    border-bottom: 1px solid black;
+}
+.header h1{
+    float: left;
+    font-size: 50px;
+    color: white;
+}
+.header img{
+    text-align: center;
+    width: 15%;
+}
+
+/*Navigation Bar*/
+.nav-wrapper{
+    height: 45px;
+}
+#navigation{
+    margin: 0px;
+    overflow: hidden;
+    background-color: #ededed;
+    border-bottom: 1px solid black;
+    height: 45px;
+}
+#navigation a{
+    float: left;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border-right: 1px solid black;
+}
+#navigation a.active{
+    background-color: #009afd;
+    color: white;
+}
+#navigation a:hover{
+    background-color: #0062ff;
+    color: white;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/*Table*/
+.tbl{
+    margin: 30px;
+}
+.tbl h1{
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+#tableData{
+    background-color: #ededed;
+}
+#tableData th{
+    padding: 20px 15px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #ededed;
+    background-color: #009afd;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+#tableData th:hover{
+    background-color: #0062ff; 
+}
+td{
+    padding: 5px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+    color: black;
+    border-bottom: 1px solid black;
+}
+td:hover{
+    background-color: #a2c6ff;
+}
+
+/*Search in Browse*/
+.browser{
+    padding-bottom: 40px;
+    text-align: center;
+}
+.browser button{
+    height: 44px;
+    width: 100px;
+    background-color: #009afd;
+    color: white;
+    border: 1px solid black;
+}
+.browser button:hover{
+    background-color: #0062ff;
+}
+.browser input{
+    height: 40px;
+    width: 400px;
+    border: 1px solid black;
+    padding-left: 8px;
+    background-color: #ededed;
+}
+
+/*Contact Page*/
+.contact-info{
+    margin: 30px;
+    text-align: center;
+}
+.contact-info h1{
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+.contact-info .contact-left{
+    width: 45%;
+    margin: 10px;
+    float: left;
+}
+.contact-info .contact-right{
+    width: 45%;
+    margin: 10px;
+    float: right;
+}
+.contact-info button{
+    margin-top: 20px;
+    padding: 35px;
+    width: 80%;
+    background: none;
+    font-size: 20px;
+    border: 1px solid black;
+}
+.contact-info button:hover{
+    background-color: #009afd;
+    color: white;
+}
+
+/*Register Page*/
+.register-form{
+    margin: 40px 200px 40px 200px;
+    border: 1px solid black;
+    background-color: #ededed;
+    padding: 15px;
+}
+.register-form h1{
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.register-form p{
+    font-weight: bold;
+}
+.register-form input[type=text], input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: 1px solid black;
+    background: white;
+}
+.register-form input[type=text]:hover, input[type=password]:hover{
+    background-color: #d1d1d1;
+}
+.register-form input[type=submit], .register-form .cancelBtn{
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.register-form input[type=submit]:hover, .register-form .cancelBtn:hover{
+    color: white;
+    background-color: #009afd;
+}
+.register-form button{
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.register-form button:hover{
+    color: white;
+    background-color: #009afd;
+}
+.register-form a{
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.register-form a:hover{
+    color: white;
+    background-color: #009afd;
+}
+
+/*Profile Page*/
+.profile-content{
+    margin: 30px;
+    text-align: center;
+}
+.profile-content h1{
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 45px;
+    text-align: center;
+}
+.profile-info input[type=submit]{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    background: none;
+    padding: 15px;
+}
+.profile-info input[type=submit]:hover{
+    color: white;
+    background-color: #009afd
+}
+.profile-info{
+    float: left;
+    border: 1px solid black;
+    width: 20%;
+    padding: 20px;
+    background-color: #ededed;  
+}
+.profile-info p{
+    font-size: 24px;
+}
+.profile-info button{
+    margin: -3px;
+    width: 25%;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid black;
+}
+.profile-info button:hover{
+    background-color: #009afd;
+    color: white;
+}
+.tracks{
+    float: right;
+    width: 70%;
+}
+
+/*Upload Page*/
+.upload-content{
+    margin: 30px;
+    text-align: center;
+}
+.upload-content h1{
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+.upload-content input[type=submit]{
+    color: black;
+    background: none;
+    border: 1px solid black;
+    background-color: white;
+    padding: 15px 30px 15px 30px;
+}
+.upload-content input[type=submit]:hover{
+    background-color: #009afd;
+    color: white;
+}
+.input-fields{
+    margin-left: 23%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    width: 50%;
+    background-color: #ededed;
+}
+.input-fields input[type=text]{
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid black;
+    background: white;
+}
+.input-fields select{
+    width: 28%;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+/*Account is Necesarry*/
+.makeBtns{
+    text-align: center;
+    padding: 10px;
+}
+.makeBtns a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 15px;
+}
+.makeBtns a:hover{
+    color: white;
+    background-color: #009afd;
+}
+
+/*Terms*/
+.terms{
+    margin-left: 100px;
+}
