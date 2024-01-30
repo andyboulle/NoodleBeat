@@ -6,7 +6,7 @@ USE noodlebeat;
 
 -- Create the users table
 CREATE TABLE IF NOT EXISTS users (
-    user_id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     username VARCHAR(100) NOT NULL UNIQUE,
@@ -17,12 +17,12 @@ CREATE TABLE IF NOT EXISTS users (
 
 -- Create the tracks table
 CREATE TABLE IF NOT EXISTS tracks (
-    track_id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(100) NOT NULL,
     artist VARCHAR(100) NOT NULL,
     genre VARCHAR(50),
-    date_uploaded DATE,
+    date_uploaded VARCHAR(10),
     file_type VARCHAR(10),
-    file BLOB, -- Assuming the file will be stored as binary data
+    file VARCHAR(255),
     likes INT DEFAULT 0
 );

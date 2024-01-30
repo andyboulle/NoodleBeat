@@ -79,9 +79,9 @@
                             echo "<td>" . $artist . "</td>\n" ;
                             echo "<td>" . $date . "</td>\n" ;
                             echo "<td style='border-right: 1px solid black;'>
-                                    <form action='../../PHP/addLikeIndex.php' method='POST'>
+                                    <form action='PHP/addLikeIndex.php' method='POST'>
                                         <input type='text' name='like' value='$id' style='display: none;'>
-                                        <input type='image' src='../../images/like.png' style='width: 20%'>
+                                        <input type='image' src='images/like.png' style='width: 20%'>
                                     </form>
                                  </td>";
                             echo "</tr>\n";
